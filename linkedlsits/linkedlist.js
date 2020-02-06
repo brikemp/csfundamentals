@@ -7,7 +7,6 @@ class LinkedList {
         this.size = 0; 
     } 
   
-    // functions to be implemented 
     add(element) 
     { 
         // creates a new node 
@@ -127,16 +126,37 @@ class LinkedList {
         return -1; 
     } 
     
-    
-    // Helper Methods 
-    // isEmpty 
-    // size_Of_List 
-    size_of_list() { 
+    isEmpty() 
+    { 
+        return this.size == 0; 
+    } 
+
+    size_of_list() 
+    { 
         console.log(this.size); 
     } 
 
-    // PrintList 
-    printList() { 
+    indexOf(element) 
+    { 
+        var count = 0; 
+        var current = this.head; 
+    
+        // iterae over the list 
+        while (current != null) { 
+            // compare each element of the list 
+            // with given element 
+            if (current.element === element) 
+                return count; 
+            count++; 
+            current = current.next; 
+        } 
+    
+        // not found 
+        return -1; 
+    } 
+
+    printList() 
+    { 
         var curr = this.head; 
         var str = ""; 
         while (curr) { 
