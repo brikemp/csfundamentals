@@ -1,4 +1,4 @@
-const Node = require('./node.js/index.js')
+const Node = require('./node.js')
 
 class LinkedList { 
     constructor() 
