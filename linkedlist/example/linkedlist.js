@@ -171,17 +171,16 @@ var ll = new LinkedList();
   
 // testing isEmpty on an empty list 
 // returns true 
-// console.log(ll.isEmpty()); 
+console.log(ll.isEmpty()); 
   
 // adding element to the list 
 ll.add(10); 
-  
-// prints 10 
+// prints 10
 ll.printList(); 
   
 // returns 1 
 console.log(ll.size_of_list()); 
-  
+
 // adding more elements to the list 
 ll.add(20); 
 ll.add(30); 
